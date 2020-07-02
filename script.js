@@ -28,10 +28,10 @@ let workExperience = +prompt('Опыт работы в данном направ
 let hobby = prompt('Ваше хобби?');
 
 switch (hobby) {
-    case "книги" :
-    case "фильмы"  :
-    case "спорт"  :
-    case "компьтерные игры" : 
+    case 'книг' :
+    case 'фильмы'  :
+    case 'спорт'  :
+    case 'компьтерные игры' : 
         alert('Ооо неплохо-неплохо');
         break;
     case 'нет' :
@@ -41,15 +41,15 @@ switch (hobby) {
 let education = prompt('Есть ли высшее образование?');
 
 switch (education) {
-    case "да" :
+    case 'да' :
         break;     
-    case "нет" :
+    case 'нет' :
         break;     
 }
 console.log(age, workExperience, hobby, education);
 
-if ((age > 17 && age < 32) && workExperience >= 2 && hobby !== 'нет' || education === "да") {
+if ((age > 17 && age < 32) && workExperience >= 2 && hobby !== 'нет' || education === 'да') {
     alert('Добро пожаловать на работу');
 } else {
-    alert("Увы, вы нам не подходите");
+    alert('Увы, вы нам не подходите');
 }
